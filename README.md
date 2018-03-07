@@ -34,5 +34,10 @@ public:
 extern port __r_refl_port;
 ```
 
+### Launch UI:
+```sh
+hust-general-ui -c ~/code/hust/ds-final.conf
+```
+
 ## TODO
 All things are todo.
