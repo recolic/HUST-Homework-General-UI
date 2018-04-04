@@ -15,12 +15,13 @@ ui-type = python-gui
 
 [source]
 language = cpp
-file = ~/code/hust/reflected_impl.hpp,~/code/hust-avl/reflected_impl.hpp
+port = ~/code/hust/reflected_impl.hpp,~/code/hust-avl/reflected_impl.hpp
+obj = ~/code/hust/compiled-object
 ```
 
-For cpp source, there'll be a naive cpp parser, which extracts some basic information from your source-files.
+This program will read port files, write some cpp/python code about the UI, build and link pre-built objects, and run it.
 
-### Example cpp file:
+### Example port file:
 ```C++
 #include <another.hpp>
 
