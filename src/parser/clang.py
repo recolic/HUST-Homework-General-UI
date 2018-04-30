@@ -2,7 +2,6 @@
 """ Testing usage: call with <filename> <classname>
 """
 
-import sys
 import clang.cindex as cindex
 
 def list_public_func(class_node):
@@ -49,4 +48,5 @@ def generate_funclist_from_files(files, interface_class_identify):
     return list_public_func(find_class(libclang_parse(files[0], interface_class_identify)))
 
 if __name__ == '__main__':
+    import sys
     print(generate_funclist_from_files(sys.argv[2:], sys.argv[1]))

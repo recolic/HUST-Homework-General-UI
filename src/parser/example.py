@@ -8,4 +8,5 @@ def generate_funclist_from_files(files, interface_class_identify):
     return []
 
 if __name__ == '__main__':
+    import sys
     print(generate_funclist_from_files(sys.argv[2:], sys.argv[1]))
