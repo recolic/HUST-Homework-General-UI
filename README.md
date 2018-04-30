@@ -63,6 +63,8 @@ All things are todo.
 
 I'm currently puzzled by some designation problems, and hesitating in some options:
 
+> (A pair of parentheses indicate a target)
+
 - (backend|gRPC daemon) ~~~ (gRPC client|frontend) # Too heavy.
 
 - (backend daemon) ~~ shell/exec ~~ (frontend) # must save/load by serialize/deserialize, which is expensive.
